@@ -10,6 +10,7 @@ tag my-component
 		p:1rem 2rem
 	<self>
 		<slot>
+
 # my-button *does* extend the button element class
 tag my-button < button
 	css w:fit-content h:fit-content
