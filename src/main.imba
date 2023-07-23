@@ -3,7 +3,6 @@ global css body
 	bg:cool3 c:cool9
 	d:grid gtr:1fr jai:center
 
-# my-component does not extend an element class
 tag my-component
 	css w:fit-content h:fit-content
 		bg:cool9 c:cool1
@@ -11,7 +10,6 @@ tag my-component
 	<self>
 		<slot>
 
-# my-button *does* extend the button element class
 tag my-button < button
 	css w:fit-content h:fit-content
 		bg:cool9 c:cool1
@@ -26,8 +24,7 @@ tag my-div < div
 	<self>
 		<slot>
 
-# my-component will be styled where as my-button will not, despite
-# both components declaring the same css styles
+# my-component will be styled where as my-button, and my-div will not
 imba.mount <div [d:vflex g:1rem]>
 	<my-component> "Imba"
 	<my-button> "Imba"
